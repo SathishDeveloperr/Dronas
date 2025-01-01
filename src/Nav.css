@@ -1,0 +1,43 @@
+/* Fix the navbar at the top */
+.divId {
+    position: fixed;  /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFDF0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 150px;
+    padding-left: 150px;
+    align-items: center;
+    z-index: 1000;  /* Ensures navbar stays on top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the navbar */
+}
+
+/* Style the unordered list */
+.divId ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+}
+
+/* Style each list item */
+.divId ul li {
+    list-style: none;
+    padding: 0 20px; /* Adjust padding for spacing between items */
+    cursor: pointer;
+}
+
+/* Hover effect for list items */
+.divId ul li:hover {
+    color: #007BFF; /* Add hover color */
+}
+
+/* Add space between the fixed navbar and the page content */
+body {
+    margin-top: 80px;  /* Adjust margin-top to prevent content from hiding behind the navbar */
+}

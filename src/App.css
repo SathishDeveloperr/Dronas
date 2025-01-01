@@ -1,0 +1,13 @@
+/* This will apply the styles more specifically */
+.heroDiv {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('/images/pexels-stywo-1054218.jpg');
+}
